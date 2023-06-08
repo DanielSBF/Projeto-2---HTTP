@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UserData</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='data.css') }}">
+</head>
+
+<body>
+  <div class="main-login">
+    <div class="left-login">
+      <h1>Dados do Usuario</h1>
+      <img src="{{ url_for('static', filename='animacao.svg') }}" class="left-login-img" alt="animacao">
+    </div>
+    <div class="right-login">
+      <div class="card-login">
+        <h1>Dados</h1>
+        <div class="textfield">
+          <h2>Login:</h2>
+          <p>{{usuario}}</p>
+        </div>
+        <div class="textfield">
+          <h2>Senha:</h2>
+          <p>{{senha}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

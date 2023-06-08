@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <form method="post" action="/dados_usuario">
+    <div class="main-login">
+      <div class="left-login">
+        <h1>Faça Seu Login</h1>
+        <img src="{{ url_for('static', filename='animacao.svg') }}" class="left-login-img" alt="animacao">
+      </div>
+      <div class="right-login">
+        <div class="card-login">
+          <h1>Login</h1>
+          <div class="textfield">
+            <label for="usuario">Usuários</label>
+            <input type="text" name="usuario" placeholder="usuário" id="usuario">
+          </div>
+          <div class="textfield">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" placeholder="senha" id="senha">
+          </div>
+          <button class="btn-login" type="submit">Login</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
